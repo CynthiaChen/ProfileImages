@@ -1,0 +1,6 @@
+framework module Pods_rolo {
+  umbrella header "Pods-rolo-umbrella.h"
+
+  export *
+  module * { export * }
+}
