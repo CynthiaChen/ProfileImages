@@ -7,24 +7,33 @@
 //
 
 import UIKit
+import SnapKit
 
 class ChatListViewController: UIViewController {
+    let chatListTableView = UITableView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(chatListTableView)
+        chatListTableView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
+        chatListTableView.dataSource = self
+        chatListTableView.register(UITableViewCell.self, forCellReuseIdentifier: "chatListCell")
 
         // Do any additional setup after loading the view.
     }
-    
+    private let contacts = ChatLsitAPI.getChatLists() // model
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension ChatListViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return contacts.count
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "chatListCell", for: indexPath)
+        cell.textLabel?.text = contacts[indexPath.row].title
+        return cell
+    }
 }
