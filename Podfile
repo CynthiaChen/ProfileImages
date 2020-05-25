@@ -6,5 +6,5 @@ target 'rolo' do
   use_frameworks!
 
   # Pods for rolo
-
+  pod 'SnapKit'
 end
