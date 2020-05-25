@@ -12,6 +12,8 @@
 		7F0198D5247C0C1C00EB8899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F0198D4247C0C1C00EB8899 /* Assets.xcassets */; };
 		7F0198D8247C0C1C00EB8899 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F0198D6247C0C1C00EB8899 /* LaunchScreen.storyboard */; };
 		7FC8633A247C111000F9A016 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC86339247C111000F9A016 /* ChatListViewController.swift */; };
+		7FC8633D247C131D00F9A016 /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC8633C247C131D00F9A016 /* ChatList.swift */; };
+		7FC8633F247C13A500F9A016 /* ChatListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC8633E247C13A500F9A016 /* ChatListAPI.swift */; };
 		AE120529BF650EB09D382674 /* Pods_rolo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD50B8A83B333A9E512261 /* Pods_rolo.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		7F0198D7247C0C1C00EB8899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F0198D9247C0C1C00EB8899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FC86339247C111000F9A016 /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		7FC8633C247C131D00F9A016 /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
+		7FC8633E247C13A500F9A016 /* ChatListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListAPI.swift; sourceTree = "<group>"; };
 		D6AD50B8A83B333A9E512261 /* Pods_rolo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rolo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,6 +71,8 @@
 				7F0198D6247C0C1C00EB8899 /* LaunchScreen.storyboard */,
 				7F0198D9247C0C1C00EB8899 /* Info.plist */,
 				7FC86339247C111000F9A016 /* ChatListViewController.swift */,
+				7FC8633C247C131D00F9A016 /* ChatList.swift */,
+				7FC8633E247C13A500F9A016 /* ChatListAPI.swift */,
 			);
 			path = rolo;
 			sourceTree = "<group>";
@@ -203,6 +209,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FC8633A247C111000F9A016 /* ChatListViewController.swift in Sources */,
+				7FC8633D247C131D00F9A016 /* ChatList.swift in Sources */,
+				7FC8633F247C13A500F9A016 /* ChatListAPI.swift in Sources */,
 				7F0198CC247C0C1A00EB8899 /* AppDelegate.swift in Sources */,
 				7F0198CE247C0C1A00EB8899 /* SceneDelegate.swift in Sources */,
 			);
