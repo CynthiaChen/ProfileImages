@@ -8,11 +8,21 @@
 class ChatLsitAPI {
     static func getChatLists() -> [ChatList] {
         let chatlists = [
-            ChatList(profileImage: "", title: "one person"),
-            ChatList(profileImage: "", title: "two people"),
-            ChatList(profileImage: "", title: "three people"),
-            ChatList(profileImage: "", title: "four people"),
-            ChatList(profileImage: "", title: "five people")
+            ChatList(title: "one person", users: [ChatUser(profileImage: "", name: "David")]),
+            ChatList(title: "two people", users: [ChatUser(profileImage: "", name: "David"),
+                                                  ChatUser(profileImage: "", name: "Anggie")]),
+            ChatList(title: "three people", users: [ChatUser(profileImage: "", name: "David"),
+                                                    ChatUser(profileImage: "", name: "Anggie"),
+                                                    ChatUser(profileImage: "", name: "Jason")]),
+            ChatList(title: "four people", users: [ChatUser(profileImage: "", name: "David"),
+                                                   ChatUser(profileImage: "", name: "Anggie"),
+                                                   ChatUser(profileImage: "", name: "Jason"),
+                                                   ChatUser(profileImage: "", name: "Jeff")]),
+            ChatList(title: "five people", users: [ChatUser(profileImage: "", name: "David"),
+                                                   ChatUser(profileImage: "", name: "Anggie"),
+                                                   ChatUser(profileImage: "", name: "Jason"),
+                                                   ChatUser(profileImage: "", name: "Jeff"),
+                                                   ChatUser(profileImage: "", name: "Abby")]),
         ]
         return chatlists
     }

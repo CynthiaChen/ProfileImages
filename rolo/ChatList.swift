@@ -7,6 +7,6 @@
 //
 
 struct ChatList {
-    let profileImage: String?
     let title: String?
+    let users: [ChatUser]?
 }
