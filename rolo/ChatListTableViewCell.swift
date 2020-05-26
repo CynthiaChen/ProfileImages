@@ -9,16 +9,48 @@
 import UIKit
 
 class ChatListTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var titleLabel = UILabel()
+    var chatList: ChatList? {
+        didSet {
+            guard let listItem = chatList else {
+                return
+            }
+            if let title = listItem.title {
+                titleLabel.text = title
+            }
+            if let users = listItem.users {
+                profileView.users = users
+            }
+        }
+    }
+    let profileView = ChatListProfileView()
+    let containerView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.clipsToBounds = true
+        return view
+    }()
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        addSubview(containerView)
+        containerView.snp.makeConstraints { (m) in
+            m.edges.equalToSuperview()
+        }
+        containerView.addSubview(profileView)
+        profileView.backgroundColor = .red
+        profileView.snp.makeConstraints { (m) in
+            m.width.height.equalTo(80)
+            m.centerY.equalToSuperview()
+        }
+        containerView.addSubview(titleLabel)
+        titleLabel.snp.makeConstraints { (m) in
+            m.centerY.equalToSuperview()
+            m.left.equalTo(profileView.snp.right).offset(10)
+        }
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
-
 }

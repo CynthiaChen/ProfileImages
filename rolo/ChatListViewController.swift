@@ -14,26 +14,34 @@ class ChatListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         view.addSubview(chatListTableView)
         chatListTableView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
         }
         chatListTableView.dataSource = self
-        chatListTableView.register(UITableViewCell.self, forCellReuseIdentifier: "chatListCell")
+        chatListTableView.delegate = self
+        chatListTableView.register(ChatListTableViewCell.self, forCellReuseIdentifier: "chatListCell")
 
         // Do any additional setup after loading the view.
     }
-    private let contacts = ChatLsitAPI.getChatLists() // model
+    private let chatlists = ChatLsitAPI.getChatLists() // model
 }
 
 extension ChatListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contacts.count
+        return chatlists.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "chatListCell", for: indexPath)
-        cell.textLabel?.text = contacts[indexPath.row].title
+        let cell = tableView.dequeueReusableCell(withIdentifier: "chatListCell", for: indexPath) as! ChatListTableViewCell
+        cell.chatList? = chatlists[indexPath.row]
         return cell
+    }
+}
+
+extension ChatListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 }
