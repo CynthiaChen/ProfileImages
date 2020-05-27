@@ -7,4 +7,5 @@ target 'rolo' do
 
   # Pods for rolo
   pod 'SnapKit'
+  pod 'SDWebImage'
 end
