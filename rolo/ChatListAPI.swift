@@ -8,21 +8,26 @@
 class ChatLsitAPI {
     static func getChatLists() -> [ChatList] {
         let chatlists = [
-            ChatList(title: "one person", users: [ChatUser(profileImage: "", name: "David")]),
-            ChatList(title: "two people", users: [ChatUser(profileImage: "", name: "David"),
-                                                  ChatUser(profileImage: "", name: "Anggie")]),
-            ChatList(title: "three people", users: [ChatUser(profileImage: "", name: "David"),
-                                                    ChatUser(profileImage: "", name: "Anggie"),
-                                                    ChatUser(profileImage: "", name: "Jason")]),
-            ChatList(title: "four people", users: [ChatUser(profileImage: "", name: "David"),
-                                                   ChatUser(profileImage: "", name: "Anggie"),
-                                                   ChatUser(profileImage: "", name: "Jason"),
-                                                   ChatUser(profileImage: "", name: "Jeff")]),
-            ChatList(title: "five people", users: [ChatUser(profileImage: "", name: "David"),
-                                                   ChatUser(profileImage: "", name: "Anggie"),
-                                                   ChatUser(profileImage: "", name: "Jason"),
-                                                   ChatUser(profileImage: "", name: "Jeff"),
-                                                   ChatUser(profileImage: "", name: "Abby")]),
+            ChatList(title: "one person", users: [
+                ChatUser(profileImage: "http://www.nretnil.com/avatar/kirk2.jpg", name: "David")]),
+            ChatList(title: "two people", users: [
+                ChatUser(profileImage: "http://www.nretnil.com/avatar/kirk2.jpg", name: "David"),
+                ChatUser(profileImage: "http://www.nretnil.com/avatar/cry-1.jpg", name: "Anggie")]),
+            ChatList(title: "three people", users: [
+                ChatUser(profileImage: "http://www.nretnil.com/avatar/kirk2.jpg", name: "David"),
+                ChatUser(profileImage: "http://www.nretnil.com/avatar/cry-1.jpg", name: "Anggie"),
+                ChatUser(profileImage: "http://www.nretnil.com/avatar/kirk.jpg", name: "Jason")]),
+            ChatList(title: "four people", users: [
+                ChatUser(profileImage: "http://www.nretnil.com/avatar/kirk2.jpg", name: "David"),
+                ChatUser(profileImage: "http://www.nretnil.com/avatar/cry-1.jpg", name: "Anggie"),
+                ChatUser(profileImage: "http://www.nretnil.com/avatar/kirk.jpg", name: "Jason"),
+                ChatUser(profileImage: "http://www.nretnil.com/avatar/mark_headshot_wbg.jpg", name: "Jeff")]),
+            ChatList(title: "five people", users: [
+                ChatUser(profileImage: "http://www.nretnil.com/avatar/kirk2.jpg", name: "David"),
+                ChatUser(profileImage: "http://www.nretnil.com/avatar/cry-1.jpg", name: "Anggie"),
+                ChatUser(profileImage: "http://www.nretnil.com/avatar/kirk.jpg", name: "Jason"),
+                ChatUser(profileImage: "http://www.nretnil.com/avatar/mark_headshot_wbg.jpg", name: "Jeff"),
+                ChatUser(profileImage: "http://www.nretnil.com/avatar/mac01.png", name: "Abby")]),
         ]
         return chatlists
     }
