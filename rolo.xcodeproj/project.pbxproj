@@ -16,6 +16,7 @@
 		7FC8633F247C13A500F9A016 /* ChatListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC8633E247C13A500F9A016 /* ChatListAPI.swift */; };
 		7FC86341247C1B2300F9A016 /* ChatListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC86340247C1B2300F9A016 /* ChatListTableViewCell.swift */; };
 		7FC86345247CC4A700F9A016 /* ChatUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC86344247CC4A700F9A016 /* ChatUser.swift */; };
+		7FC86348247D0DB600F9A016 /* ChatListProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC86347247D0DB600F9A016 /* ChatListProfileImageView.swift */; };
 		AE120529BF650EB09D382674 /* Pods_rolo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD50B8A83B333A9E512261 /* Pods_rolo.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		7FC8633E247C13A500F9A016 /* ChatListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListAPI.swift; sourceTree = "<group>"; };
 		7FC86340247C1B2300F9A016 /* ChatListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListTableViewCell.swift; sourceTree = "<group>"; };
 		7FC86344247CC4A700F9A016 /* ChatUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUser.swift; sourceTree = "<group>"; };
+		7FC86347247D0DB600F9A016 /* ChatListProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListProfileImageView.swift; sourceTree = "<group>"; };
 		D6AD50B8A83B333A9E512261 /* Pods_rolo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rolo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 				7FC86344247CC4A700F9A016 /* ChatUser.swift */,
 				7FC8633E247C13A500F9A016 /* ChatListAPI.swift */,
 				7FC86340247C1B2300F9A016 /* ChatListTableViewCell.swift */,
+				7FC86347247D0DB600F9A016 /* ChatListProfileImageView.swift */,
 			);
 			path = rolo;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				7FC8633D247C131D00F9A016 /* ChatList.swift in Sources */,
 				7FC8633F247C13A500F9A016 /* ChatListAPI.swift in Sources */,
 				7FC86341247C1B2300F9A016 /* ChatListTableViewCell.swift in Sources */,
+				7FC86348247D0DB600F9A016 /* ChatListProfileImageView.swift in Sources */,
 				7F0198CC247C0C1A00EB8899 /* AppDelegate.swift in Sources */,
 				7F0198CE247C0C1A00EB8899 /* SceneDelegate.swift in Sources */,
 			);
