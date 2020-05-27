@@ -35,7 +35,7 @@ extension ChatListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "chatListCell", for: indexPath) as! ChatListTableViewCell
-        cell.chatList? = chatlists[indexPath.row]
+        cell.chatList = chatlists[indexPath.row]
         return cell
     }
 }

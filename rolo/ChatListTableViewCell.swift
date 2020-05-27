@@ -38,9 +38,8 @@ class ChatListTableViewCell: UITableViewCell {
             m.edges.equalToSuperview()
         }
         containerView.addSubview(profileView)
-        profileView.backgroundColor = .red
         profileView.snp.makeConstraints { (m) in
-            m.width.height.equalTo(80)
+            m.width.height.equalTo(70)
             m.centerY.equalToSuperview()
         }
         containerView.addSubview(titleLabel)
