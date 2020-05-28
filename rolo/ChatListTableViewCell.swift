@@ -50,5 +50,5 @@ class ChatListTableViewCell: UITableViewCell {
     private var titleLabel = UILabel()
     private let profileView = ChatListProfileView()
     private let containerView = UIView()
-    private let PROFILE_IMAGE_SIZE = 60
+    private let PROFILE_IMAGE_SIZE = 60 //The image profile size 
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Cynthia Chen. All rights reserved.
 //
 class ChatLsitAPI {
-
+    //Fake chat users data, randomly picked from http://www.nretnil.com/avatar
     static func getChatLists() -> [ChatList] {
         let chatlists = [
             ChatList(title: "one person", users: [

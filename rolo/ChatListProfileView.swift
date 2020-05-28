@@ -28,6 +28,7 @@ class ChatListProfileView: UIView {
     }
 
     private func setupImages(users: [ChatUser]) {
+        //if the count is 0, there's no image for now
         let count = users.count
         if count == 1 {
             let img = ChatListProfileImageView()
