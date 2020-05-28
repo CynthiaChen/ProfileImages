@@ -9,7 +9,6 @@
 import UIKit
 
 class ChatListTableViewCell: UITableViewCell {
-    var titleLabel = UILabel()
     var chatList: ChatList? {
         didSet {
             guard let listItem = chatList else {
@@ -23,23 +22,18 @@ class ChatListTableViewCell: UITableViewCell {
             }
         }
     }
-    let profileView = ChatListProfileView()
-    let containerView: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.clipsToBounds = true
-        return view
-    }()
-    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubview(containerView)
+        containerView.backgroundColor = .white
         containerView.snp.makeConstraints { (m) in
             m.edges.equalToSuperview()
         }
         containerView.addSubview(profileView)
+        profileView.backgroundColor = .white
         profileView.snp.makeConstraints { (m) in
-            m.width.height.equalTo(70)
+            m.left.equalToSuperview().offset(4)
+            m.width.height.equalTo(PROFILE_IMAGE_SIZE)
             m.centerY.equalToSuperview()
         }
         containerView.addSubview(titleLabel)
@@ -52,4 +46,9 @@ class ChatListTableViewCell: UITableViewCell {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
+    private var titleLabel = UILabel()
+    private let profileView = ChatListProfileView()
+    private let containerView = UIView()
+    private let PROFILE_IMAGE_SIZE = 60
 }

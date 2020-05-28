@@ -73,20 +73,28 @@
 		7F0198CA247C0C1A00EB8899 /* rolo */ = {
 			isa = PBXGroup;
 			children = (
+				7FC05C81247EB71100ABB29A /* Model */,
 				7F0198CB247C0C1A00EB8899 /* AppDelegate.swift */,
 				7F0198CD247C0C1A00EB8899 /* SceneDelegate.swift */,
 				7F0198D4247C0C1C00EB8899 /* Assets.xcassets */,
 				7F0198D6247C0C1C00EB8899 /* LaunchScreen.storyboard */,
 				7F0198D9247C0C1C00EB8899 /* Info.plist */,
-				7FC86339247C111000F9A016 /* ChatListViewController.swift */,
-				7FC8633C247C131D00F9A016 /* ChatList.swift */,
-				7FC86344247CC4A700F9A016 /* ChatUser.swift */,
 				7FC8633E247C13A500F9A016 /* ChatListAPI.swift */,
+				7FC86339247C111000F9A016 /* ChatListViewController.swift */,
 				7FC86340247C1B2300F9A016 /* ChatListTableViewCell.swift */,
 				7FC86342247CC2DF00F9A016 /* ChatListProfileView.swift */,
 				7FC86347247D0DB600F9A016 /* ChatListProfileImageView.swift */,
 			);
 			path = rolo;
+			sourceTree = "<group>";
+		};
+		7FC05C81247EB71100ABB29A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FC8633C247C131D00F9A016 /* ChatList.swift */,
+				7FC86344247CC4A700F9A016 /* ChatUser.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8C3AB90FB84C9CAAD9F4F6A5 /* Pods */ = {

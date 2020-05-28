@@ -13,15 +13,9 @@ class ChatListProfileImageView: UIImageView {
         super.layoutSubviews()
         self.contentMode = .scaleAspectFill
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.layer.cornerRadius = 8
+        self.layer.cornerRadius = 10
         self.layer.borderColor = UIColor.white.cgColor
-        self.layer.borderWidth = 2
+        self.layer.borderWidth = 1.5
         self.clipsToBounds = true
-        
-        //clean up border line
-        let path = UIBezierPath(roundedRect: self.bounds.insetBy(dx: 0.1, dy: 0.1), cornerRadius: 8.0)
-        let mask = CAShapeLayer()
-        mask.path = path.cgPath
-        self.layer.mask = mask        
     }
 }

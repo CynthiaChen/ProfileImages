@@ -22,7 +22,6 @@ class ChatListViewController: UIViewController {
         chatListTableView.dataSource = self
         chatListTableView.delegate = self
         chatListTableView.register(ChatListTableViewCell.self, forCellReuseIdentifier: "chatListCell")
-
         // Do any additional setup after loading the view.
     }
     private let chatlists = ChatLsitAPI.getChatLists() // model
@@ -36,6 +35,7 @@ extension ChatListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "chatListCell", for: indexPath) as! ChatListTableViewCell
         cell.chatList = chatlists[indexPath.row]
+        cell.selectionStyle = .none
         return cell
     }
 }
